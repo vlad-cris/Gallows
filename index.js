@@ -15,6 +15,7 @@ let messageDisplayElement = document.getElementById("messageDisplay");
 let messageTextElement = document.getElementById("message");
 let lifeSpanElement = document.getElementById("lifeSpan");
 let wordToGuessElement = document.getElementById("wordToGuess");
+let lettersElement = document.getElementById("letters");
 
 let startButton = document.getElementById("start");
 let restartButton = document.getElementById("restartGame");
@@ -28,6 +29,7 @@ function createGuessWord() {
 
 function createPlayerWord() {
     createGuessWord();
+    lettersElement.innerText = guessWord.length;
     playerWord = new Array();
     for (let i = 0; i < guessWord.length; i++) {
         playerWord[i] = "-";

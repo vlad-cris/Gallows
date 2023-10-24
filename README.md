@@ -1,17 +1,19 @@
-'''
-Spânzurătoare
-Să se creeze jocul clasic de spânzurătoare. În cadrul acestui joc se alege un cuvânt, iar utilizatorul trebuie să ghicească acest cuvânt.
+This is an implementation from learn.wellcode.ro, with this tasks:
 
-La început, utilizatorul va vedea doar numărul de litere din care este format cuvântul, iar pentru fiecare literă din cuvât va fi afișată o linie orizontală (_).
+"""
+Gallows
+To create the classic game of hangman. In this game a word is chosen and the user has to guess this word.
 
-Utilizatorul va ghici câte o literă de la a la z. Pentru fiecare literă ghicită corect, se va înlocui pe fiecare dintre pozițiile din cuvânt unde apare acea literă linia orizontală cu litera ghicită.
+At first, the user will only see the number of letters that make up the word, and a horizontal line (_) will be displayed for each letter in the bracket.
 
-Pentru fiecare literă ghicită care nu se află în cuvânt, utilizatorul va pierde o viață.
+The user will guess one letter at a time from a to z. For each correctly guessed letter, the horizontal line with the guessed letter will be replaced on each of the positions in the word where that letter appears.
 
-Utilizatorul are un număr de 7 vieți.
+For each guessed letter that is not in the word, the user will lose a life.
 
-La finalul jocului să se afișeze în pagină (deci fără alert sau console.log) un mesaj corespunzător în funcție de câștigarea sau pierderea jocului.
+The user has a count of 7 lives.
 
-Nu este necesar să se realizeze desenul efectiv al spânzurătorii.
+At the end of the game display on the page (so no alert or console.log) an appropriate message depending on whether the game is won or lost.
 
-'''
+It is not necessary to make the actual drawing of the gallows.
+
+"""
