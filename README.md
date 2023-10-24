@@ -1,7 +1,9 @@
 This is an implementation from learn.wellcode.ro, with this tasks:
 
 """
+
 Gallows
+
 To create the classic game of hangman. In this game a word is chosen and the user has to guess this word.
 
 At first, the user will only see the number of letters that make up the word, and a horizontal line (_) will be displayed for each letter in the bracket.
@@ -17,3 +19,5 @@ At the end of the game display on the page (so no alert or console.log) an appro
 It is not necessary to make the actual drawing of the gallows.
 
 """
+
+Check the [site link](https://gleeful-melomakarona-5de12e.netlify.app/).
