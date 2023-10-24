@@ -2,11 +2,11 @@ let words = [
     "carte", "cafea", "cimbru", "cantec", "crocodil", "calculator", "cisterna", 
     "coridor", "carbune", "ciolofan", "castron", "casetofon", "combina", "ciaun"
     ];
-    let guessWord;
-    let playerWord;
-    let life;
-    const finalMessageWin = `<h1 class="text-center text-success">You WIN!</h1>`;
-    const finalMessageLose = `<h1 class="text-center text-success">You LOSE!</h1>`;
+let guessWord;
+let playerWord;
+let life;
+const finalMessageWin = `<h1 class="text-center text-success">You WIN!</h1>`;
+const finalMessageLose = `<h1 class="text-center text-success">You LOSE!</h1>`;
 
 //HTML elements
 let startGameElement = document.getElementById("startGame");
