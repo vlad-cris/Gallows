@@ -2,7 +2,7 @@ This is an implementation from learn.wellcode.ro, with this tasks:
 
 """
 
-Gallows
+HangMan
 
 To create the classic game of hangman. In this game a word is chosen and the user has to guess this word.
 
