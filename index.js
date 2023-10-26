@@ -5,8 +5,6 @@ let words = [
 let guessWord;
 let playerWord;
 let life;
-const finalMessageWin = `<h1 class="text-center text-success">You WIN!</h1>`;
-const finalMessageLose = `<h1 class="text-center text-success">You LOSE!</h1>`;
 
 //HTML elements
 let startGameElement = document.getElementById("startGame");
@@ -21,8 +19,13 @@ let startButton = document.getElementById("start");
 let restartButton = document.getElementById("restartGame");
 let checkButton = document.getElementById("check");
 
+//onclick events
+restartButton.onclick = showPlayGameElement;
+startButton.onclick = showPlayGameElement;
+checkButton.onclick = checkAndDisplay;
+
 //game play functions
-        //-- create words
+//-- create words
 function createGuessWord() {
     guessWord = words[Math.floor(Math.random() * words.length)].split('');
 };
@@ -36,13 +39,14 @@ function createPlayerWord() {
     }    
 };
 
-        //-- display and check game play
+//-- display and check game play
 function checkAndDisplay() {
     checkTextInput();
     checkPlayerWord();
     showPlayerWord();
     if (life == 0) {
-        showMessageElement(finalMessageLose);
+        addFinalMessageWin("You LOSE!");
+        showMessageElement();
     }
     document.getElementById("inputText").value = "";
 };
@@ -56,7 +60,8 @@ function checkTextInput() {
             }
         }
     } else if (inputText == guessWord.join("")) {
-        showMessageElement(finalMessageWin);
+        addFinalMessageWin("You WIN!");
+        showMessageElement();
     } else { 
         life--;
         updateLifeSpan();
@@ -71,7 +76,8 @@ function checkPlayerWord() {
         }
     }
     if (isComplectWord) {
-        showMessageElement(finalMessageWin);
+        addFinalMessageWin("You WIN!");
+        showMessageElement();
     }
 };
 
@@ -97,13 +103,11 @@ function showPlayGameElement() {
     gamePlayElement.removeAttribute("hidden");
 };
 
-function showMessageElement(finalMessage) {
-    messageTextElement.innerHTML = finalMessage;
+function showMessageElement() {
     gamePlayElement.setAttribute("hidden", "");
     messageDisplayElement.removeAttribute("hidden");
 };
 
-//onclick events
-restartButton.onclick = showPlayGameElement;
-startButton.onclick = showPlayGameElement;
-checkButton.onclick = checkAndDisplay;
+function addFinalMessageWin(message) {
+    messageTextElement.innerHTML = `<h1 class="text-center text-success">${message}</h1>`;
+};
