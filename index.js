@@ -1,7 +1,8 @@
 let words = [
-    "carte", "cafea", "cimbru", "cantec", "crocodil", "calculator", "cisterna", 
-    "coridor", "carbune", "ciolofan", "castron", "casetofon", "combina", "ciaun"
-    ];
+    "abruptly", "absurd", "abyss", "affix", "askew", "avenue", "awkward", 
+    "axiom", "azure", "bagpipes", "bandwagon", "banjo", "bayou", "beekeeper", 
+    "bikini", "blitz", "blizzard", "strength", "strengths", "stretch", "stronghold", "stymied"
+];
 let guessWord;
 let playerWord;
 let life;
